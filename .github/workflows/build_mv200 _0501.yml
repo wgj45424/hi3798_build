@@ -1,4 +1,4 @@
-name: build_mv200 050
+name: build_mv200 0501
 
 on:
   repository_dispatch:
