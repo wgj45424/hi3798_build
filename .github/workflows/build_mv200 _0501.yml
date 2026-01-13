@@ -107,7 +107,7 @@ jobs:
         run: |
           git clone -q --single-branch --depth=1 https://github.com/JasonFreeLab/HiSTBLinuxV100R005C00SPC050 mv200
           cd mv200
-          cp configs/${{inputs.chip}}_hi3798mv200-${{inputs.arch}}.mak ./cfg.mak
+          cp configs/hi3798mv200/${{inputs.chip}}_hi3798mv200_cfg.mak ./cfg.mak
           cp ${GITHUB_WORKSPACE}/config_files/hi3798mv200_defconfig-64 mv200/source/kernel/linux-4.4.y/arch/arm64/configs/hi3798mv200_defconfig
           echo "status=success" >> ${GITHUB_OUTPUT}
 
